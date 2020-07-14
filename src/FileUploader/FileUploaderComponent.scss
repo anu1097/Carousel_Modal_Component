@@ -1,0 +1,39 @@
+.files {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fileUploader{
+  position: relative;
+  padding: 3em;
+  outline: 2px dashed #92b0b3;
+  transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  text-align: center;
+} 
+
+.fileUploader:after {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  width: 2em;
+  right: 0;
+  height: 2em;
+  content: "";
+  background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+  margin: auto;
+  background-size: 100%;
+}
+
+.field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+form > * {
+  margin: 0.5em;
+  flex-grow: 1;
+}
